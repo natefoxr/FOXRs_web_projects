@@ -1,6 +1,6 @@
 # FOXR's Dashboard of Projects
 This task will be done using as few external libraries as possible to learn the complexities of the the base languages.
-This site will be deployed to [GitHub Pages at https://natefoxr.github.io/](https://projects.foxr.xyz)
+This site will be deployed to [GitHub Pages at https://natefoxr.github.io/](https://www.projects.foxr.xyz)
 
 ## Day 1
 Homepage
