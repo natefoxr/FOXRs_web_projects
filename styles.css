@@ -1,0 +1,70 @@
+body {
+    background-color: #FDFFFC;
+}
+h1 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 3rem;
+}
+.link-container {
+    text-align: center;
+}
+.active-link {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #2EC4B6;
+    padding: 10px;
+}
+.active-link:hover, .active-link:focus  {
+    animation-name: underline_on_hover;
+    animation-duration: 0.5s;
+    text-decoration: underline;
+    color: #FF9F1C;
+}
+.disable-link {
+    display: block;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #01162734;
+    padding: 10px;
+}
+.disable-link:hover, .disable-link:focus  {
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+.return-home {
+    text-decoration: none;
+    font-size: 3rem;
+    padding-bottom: 4px;
+    margin: 30px;
+    color: #011627;
+}
+.return-home:hover, .return-home:focus  {
+    border: 1px solid #011627;
+    color: #2EC4B6;
+}
+.return-home:active {
+    color: #FF9F1C;
+}
+
+
+
+
+
+
+
+
+/* Keyframe Animations */
+@keyframes underline_on_hover {
+    from {
+        text-decoration: none;
+        color: #2EC4B6;
+    }
+    to {
+        text-decoration: underline;
+        color: #FF9F1C;
+    }
+}
+
