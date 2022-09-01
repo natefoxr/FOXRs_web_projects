@@ -1,6 +1,6 @@
 # FOXR's Dashboard of Projects
 This task will be done using as few external libraries as possible to learn the complexities of the the base languages.
-This site will be deployed to [GitHub Pages at https://natefoxr.github.io/](https://www.projects.foxr.xyz)
+This site will be deployed to [GitHub Pages at https://www.projects.foxr.xyz/](https://www.projects.foxr.xyz)
 
 ## Day 1
 Homepage
@@ -8,7 +8,7 @@ Today, August, 31th 2022, I designed a basic homepage with links and some CSS st
 
 ## Day 1 & 
 Pokemon Quiz App
-Today, August, 31th 2022, I add the basic HTML layout for the Pokemon Quiz. #TODO: Add event listeners to update the quiz card and [PokeAPI](https://pokeapi.co/) functionality.
+Today, August, 31th 2022, I add the basic HTML layout for the Pokemon Quiz. Started event listeners to update the quiz card and [PokeAPI](https://pokeapi.co/) functionality.
 
 ## Day 
 TicTacToe
@@ -45,3 +45,6 @@ Speed Typing Test
 
 ## Day 
 Password Generator
+
+## Day 
+Browser Window Landing Page

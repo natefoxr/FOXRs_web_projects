@@ -48,6 +48,9 @@ h1 {
 .return-home:active {
     color: #FF9F1C;
 }
+.hide {
+    display: none;
+}
 
 
 
