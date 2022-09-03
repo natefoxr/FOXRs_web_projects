@@ -6,9 +6,11 @@ This site will be deployed to [GitHub Pages at https://www.projects.foxr.xyz/](h
 Homepage
 Today, August, 31th 2022, I designed a basic homepage with links and some CSS styling elements. The homepage will be updated as the projects move forward
 
-## Day 1 & 
+## Day 1 & 2 & 3
 Pokemon Quiz App
-Today, August, 31th 2022, I add the basic HTML layout for the Pokemon Quiz. Started event listeners to update the quiz card and [PokeAPI](https://pokeapi.co/) functionality.
+Today, August 31th, 2022, I added the basic HTML layout for the Pokemon Quiz. Started event listeners to update the quiz card and [PokeAPI](https://pokeapi.co/) functionality.
+Today, September 1st, 2022, I refactored the quiz.js file.
+Today, September 3rd, 2022, I nearly completed quiz functionality and tracking user inputs.
 
 ## Day 
 TicTacToe
