@@ -1,5 +1,11 @@
 .quiz-card {
     text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px 8px 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.335);
+    padding: 30px;
+    margin: 0 25% 0 25%;
+
 }
 .pokemon-button {
     padding: 10px;
