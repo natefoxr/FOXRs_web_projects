@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOXR Pokemon Quiz</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="quiz.css">
+
 </head>
 <body>
     <a class="return-home" href="../index.html">&larr;</a>
-    <h1>How well do you know your Pokemon? Take this quiz to find out!</h1>
+    <h1>How well do you know your Pokemon?<br>Take this quiz to find out!</h1>
     <div class="quiz-card">
+        <h3 class = "pokemon-text" id="quiz-text">Click the button below to start the quiz!</h3>
         <div id="random-pokemon-img"></div>
-        <h3 id="quiz-text">Click the button below to start the quiz!</h3>
-        <input class="hide" id="pokemon-input" type="text">
+        <input class="hide" id="pokemon-input" type="text" placeholder="Enter the Pokemon's name..." size="50">
         <h6 class="hide" id="pokemon-score"></h6>
-        <button class="" id="quiz-button">Start Quiz!</button>
-        <button class="hide" id="submit-answer">Submit Answer</button>
-        <button class="hide" id="next-poke">Next Question</button>
-        <button class="hide" id="retry-poke">Restart Quiz?</button>
-        <button class="hide" href="/index.html" id="poke-home-btn">Return home</button>
+        <button class="pokemon-button" id="quiz-button">Start Quiz!</button>
+        <button class="hide pokemon-button" id="submit-answer">Submit Answer</button>
+        <button class="hide pokemon-button" id="next-poke">Next Question</button>
+        <button class="hide pokemon-button" id="retry-poke">Restart Quiz?</button>
+        <button class="hide pokemon-button" href="../index.html" id="poke-home-btn">Return home</button>
+        <div id="correct-pokemon-visual"></div>
     </div>
 
     <script src="quiz.js"></script>

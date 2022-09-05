@@ -11,7 +11,7 @@ Pokemon Quiz App
 Today, August 31th, 2022, I added the basic HTML layout for the Pokemon Quiz. Started event listeners to update the quiz card and [PokeAPI](https://pokeapi.co/) functionality.  
 Today, September 1st, 2022, I refactored the quiz.js file.  
 Today, September 3rd, 2022, I nearly completed quiz functionality and tracking user inputs.  
-Today, September 4th, 2022, I completed the Javascript functionality of the Pokemon Quiz including tracking inputs and number correct.  
+Today, September 4th, 2022, I completed the Javascript functionality of the Pokemon Quiz including tracking inputs and number correct. I completed the base styling for the pokemon quiz but plan to improve styling of the website in batches.  
 
 
 ## Day 
@@ -52,3 +52,6 @@ Password Generator
 
 ## Day 
 Browser Window Landing Page
+
+## Day
+Wordle
