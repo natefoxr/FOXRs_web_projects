@@ -1,3 +1,6 @@
+.contianer {
+    text-align: center;
+}
 .quiz-card {
     text-align: center;
     border: 1px solid #000;
@@ -15,4 +18,15 @@
 }
 #pokemon-score {
     font-style: oblique;
+}
+@media screen and (max-width: 600px) {
+    .quiz-card {
+        margin: 0 10% 0 10%;
+    }
+}
+@media screen and (max-width: 280px) {
+    .quiz-card {
+        margin: 0 3% 0 3%;
+        padding: 15px;
+    }
 }
