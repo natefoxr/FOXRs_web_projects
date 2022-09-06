@@ -18,7 +18,8 @@ Today, September 4th, 2022, I completed the Javascript functionality of the Poke
 TicTacToe
 
 ## Day 
-Calculator
+Calculator  
+Today, September 5th, 2022, I created the calculator app with functionality for basic math functions, styled the calculator and linked it to the homepage.  
 
 ## Day 
 Alarm Clock

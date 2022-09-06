@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOXR Calculator</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="calculator.css">
+
+</head>
+<body>
+    <a class="return-home" href="../index.html">&larr;</a>
+    <h1>FOXR's Calculator App</h1>
+    <div class="container">
+        <div class="calculator-card">
+            <div id="calc-display"></div>
+            <button onclick="clearCalc()" class="calc-item clac-function-first" id="calc-ac">AC</button>
+            <button onclick="inverseSign(this.id)" class="calc-item clac-function-first" id="calc-plus-minus">+/-</button>
+            <button onclick="calculatePercentage()" class="calc-item clac-function-first" id="calc-percent">%</button>
+            <button onclick="userPerformCalculation(this.id)" class="calc-item clac-function" id="calc-divide">&divide;</button>
+            <button onclick="userAddNumber(this.id)" class="calc-item calc-number" id="calc-seven">7</button>
+            <button onclick="userAddNumber(this.id)" class="calc-item calc-number" id="calc-eight">8</button>
+            <button onclick="userAddNumber(this.id)" class="calc-item calc-number" id="calc-nine">9</button>
+            <button onclick="userPerformCalculation(this.id)" class="calc-item clac-function" id="calc-multiply">x</button>
+            <button onclick="userAddNumber(this.id)" class="calc-item calc-number" id="calc-four">4</button>
+            <button onclick="userAddNumber(this.id)" class="calc-item calc-number" id="calc-five">5</button>
+            <button onclick="userAddNumber(this.id)" class="calc-item calc-number" id="calc-six">6</button>
+            <button onclick="userPerformCalculation(this.id)" class="calc-item clac-function" id="calc-minus">-</button>
+            <button onclick="userAddNumber(this.id)" class="calc-item calc-number" id="calc-one">1</button>
+            <button onclick="userAddNumber(this.id)" class="calc-item calc-number" id="calc-two">2</button>
+            <button onclick="userAddNumber(this.id)" class="calc-item calc-number" id="calc-three">3</button>
+            <button onclick="userPerformCalculation(this.id)" class="calc-item clac-function" id="calc-plus">+</button>
+            <button onclick="userAddNumber(this.id)" class="calc-item calc-number" id="calc-zero">0</button>
+            <button onclick="userAddNumber(this.id)" class="calc-item calc-number" id="calc-period">.</button>
+            <button onclick="calcEquals()" class="calc-item clac-function" id="calc-equals">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
