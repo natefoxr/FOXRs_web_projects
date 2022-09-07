@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOXR TicTacToe Game</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="tictactoe.css">
+
+</head>
+<body>
+    <a class="return-home" href="../index.html">&larr;</a>
+    <div class="container">
+        <h1>Want to play TicTacToe?<br>Click start to begin:</h1>
+        <div class="ttt-start-buttons">
+            <button onclick="onePlayerStart()" class="ttt-start" id="vs-player">Start</button>
+        </div>
+        <div id="winning-div hide"></div>
+        <div class="tictactoe-card hide" id="ttt-box-js">
+            <button onmousedown="userChoice(this.id)" class="tictactoe-box" id="1"></button>
+            <button onmousedown="userChoice(this.id)" class="tictactoe-box" id="2"></button>
+            <button onmousedown="userChoice(this.id)" class="tictactoe-box" id="3"></button>
+            <button onmousedown="userChoice(this.id)" class="tictactoe-box" id="4"></button>
+            <button onmousedown="userChoice(this.id)" class="tictactoe-box" id="5"></button>
+            <button onmousedown="userChoice(this.id)" class="tictactoe-box" id="6"></button>
+            <button onmousedown="userChoice(this.id)" class="tictactoe-box" id="7"></button>
+            <button onmousedown="userChoice(this.id)" class="tictactoe-box" id="8"></button>
+            <button onmousedown="userChoice(this.id)" class="tictactoe-box" id="9"></button>
+        </div>
+        <div class="ttt-start-buttons">
+            <button onclick="location.reload()" class="ttt-retry hide" id="retry-ttt-button">Retry</button>
+        </div>
+    </div>
+    <script src="tictactoe.js"></script>
+</body>
+</html>

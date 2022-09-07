@@ -15,8 +15,9 @@ Today, September 4th, 2022, I completed the Javascript functionality of the Poke
 Today, September 6th, 2022, I completed the responsive web design for mobile.  
 
 
-## Day 
+## Day 6
 TicTacToe
+Today, September 6th, 2022, I created the TicTacToe app. There are still some bugs in the logic.  
 
 ## Day 5
 Calculator  
