@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="speed.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="speed-heading">
+            Simple Speed Typing
+        </h1>
+        <div class="speed-container">
+            <div class="speed-container"></div>
+            <div class="wpm speed-stats">
+                <div class="speed-header">WPM</div>
+                <div class="curr-wpm">---</div>
+            </div>
+            <div class="cpm speed-stats">
+                <div class="speed-header">CPM</div>
+                <div class="curr-cpm">---</div> 
+            </div>
+            <div class="errors speed-stats">
+                <div class="speed-header">Errors</div>
+                <div class="curr-errors">0</div>
+            </div>
+            <div class="time speed-stats">
+                <div class="speed-header">Timer</div>
+                <div class="curr-timer">60s</div>
+            </div>
+            <div class="accuracy speed-stats">
+                <div class="speed-header">Accuracy</div>
+                <div class="curr-wpm">---</div>
+            </div>
+        </div>
+        <div class="quote">
+            Click on the text area below to start the game.
+        </div>
+        <textarea class="speed-input" 
+            placeholder="Click here to start the game..." 
+            oninput="processSpeedArea"
+            oninput="startGame()">
+        </textarea>
+        <button class="speed-restart"
+            onclick="resetValues()">
+            Restart
+        </button>
+    </div>
+
+
+    <script src="speed.js"></script>
+</body>
+</html>
