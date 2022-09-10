@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="speed.css">
 </head>
 <body>
+    <a class="return-home" href="../index.html">&larr;</a>
     <div class="container">
         <h1 class="speed-heading">
             Simple Speed Typing
@@ -17,23 +18,23 @@
             <div class="speed-container"></div>
             <div class="wpm speed-stats">
                 <div class="speed-header">WPM</div>
-                <div class="curr-wpm">---</div>
+                <div id="curr-wpm">---</div>
             </div>
             <div class="cpm speed-stats">
                 <div class="speed-header">CPM</div>
-                <div class="curr-cpm">---</div> 
-            </div>
-            <div class="errors speed-stats">
-                <div class="speed-header">Errors</div>
-                <div class="curr-errors">0</div>
+                <div id="curr-cpm">---</div> 
             </div>
             <div class="time speed-stats">
                 <div class="speed-header">Timer</div>
-                <div class="curr-timer">60s</div>
+                <div id="curr-timer">60s</div>
+            </div>
+            <div class="errors speed-stats">
+                <div class="speed-header">Errors</div>
+                <div id="curr-errors">0</div>
             </div>
             <div class="accuracy speed-stats">
                 <div class="speed-header">Accuracy</div>
-                <div class="curr-wpm">---</div>
+                <div id="curr-acc">---</div>
             </div>
         </div>
         <div class="quote">
@@ -41,9 +42,8 @@
         </div>
         <textarea class="speed-input" 
             placeholder="Click here to start the game..." 
-            oninput="processSpeedArea"
-            oninput="startGame()">
-        </textarea>
+            oninput="processSpeedArea()"
+            oninput="startGame()"></textarea>
         <button class="speed-restart"
             onclick="resetValues()">
             Restart

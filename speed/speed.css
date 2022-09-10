@@ -22,9 +22,57 @@ body {
 .quote {
     border: 1px solid #000;
     border-radius: 10px;
-    box-shadow: 3px 3px 10px;
+    box-shadow: #333 3px 3px 10px;
+    background-color: #ee9;
+    font-size: 1.5rem;
     width: 500px;
     height: 100px;
     padding: 15px;
     margin: 20px;
+}
+textarea {
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: #333 3px 3px 10px;
+    background-color: #eed;
+    font-size: 1.5rem;
+    height: 150px;
+    width: 50%;
+    margin: 20px;
+    padding: 15px;
+}
+textarea:focus {
+    outline: 2px solid #333;
+    box-shadow: #333 3px 3px 20px;
+
+}
+.speed-stats {
+    background-color: #fff;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border: 3px groove #ff0000;
+    border-radius: 50%;
+    box-shadow: #333 3px 3px 10px;
+}
+.speed-stats:hover {
+    background-color: #333;
+    font-weight: 700;
+    color: #fff;
+    border: 3px dotted #146000;
+    box-shadow: #fff 3px 3px 10px;
+}
+.speed-restart {
+    background-color: #ee9;
+    padding: 15px 30px 15px 30px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+.incorrect-char {
+    color: #146000;
+    text-decoration: underline;
+}
+.correct-char {
+    color: #ff0000;
+    text-decoration: underline;
 }
