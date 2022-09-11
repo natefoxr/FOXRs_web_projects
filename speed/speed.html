@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FOXR Typing test</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="speed.css">
 </head>
@@ -37,13 +37,14 @@
                 <div id="curr-acc">---</div>
             </div>
         </div>
-        <div class="quote">
+        <div id="quote">
             Click on the text area below to start the game.
         </div>
-        <textarea class="speed-input" 
+        <textarea 
+            id="speed-input" 
             placeholder="Click here to start the game..." 
-            oninput="processSpeedArea()"
-            oninput="startGame()"></textarea>
+            oninput="processUserInput()"
+            onclick="startGame()"></textarea>
         <button class="speed-restart"
             onclick="resetValues()">
             Restart
