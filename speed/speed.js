@@ -10,9 +10,11 @@ const typeInput = document.getElementById('speed-input');
 const typeRestart = document.getElementById('speed-restart');
 const quote = document.getElementById('quote');
 let userTypedQuotes = [];
+let userTypedChars = [];
 let quotesList = [];
 
 // TODO: Add trackers for user inputs and quotes to track cpm and wpm
+// TODO: Add classes if user input is incorrect
 
 
 // Prepare quotes with API
@@ -20,13 +22,13 @@ async function getQuotes() {
     try {
         let obj;
         let  randQuote;
-        const res = await fetch('https://api.quotable.io/random');
+        const res = await fetch('https://api.quotable.io/random?maxLength=150');
         obj = await res.json();
-        randQuote = obj['content']
-        return randQuote
+        randQuote = obj['content'];
+        return randQuote;
     } 
     catch {
-        getQuotes()
+        getQuotes();
     }
     
 }
@@ -36,22 +38,31 @@ function processUserInput() {
     typeInput.addEventListener("keyup", function(e) {       
         let keyEvent = e.key;
         if (keyEvent == "Enter") {
+            let words = typeInput.value.split(" ");
+            for(i in words) {
+                // words[i].trim()
+                userTypedQuotes.push(words[i].trim());
+            }
+            let chars = typeInput.value
+            for(i in chars) {
+                // words[i].trim()
+                userTypedChars.push(chars[i].trim());
+            }
             typeInput.value = '';
-
-            createSpan()
+            createSpan();
         }
         return keyEvent;
     }, {once: true});
-    let userInput = typeInput.value
-    console.log(userInput)
+    let userInput = typeInput.value;
+    console.log(userInput);
 }
 
 // Start Game
 function startGame() {
     // Display first quote
-    createSpan()
-    updateTimer()
-
+    createSpan();
+    updateTimer();
+    typeInput.removeEventListener("click", startGame)
 }
 
 // Update Clock
@@ -59,9 +70,14 @@ function updateTimer() {
     // Countdown and update every second 
     let count = 60;
     let time = setInterval(function() {
+        let words = typeInput.value.split(" ");
         cTimer.innerHTML = `${count--}s`;
         if(count == -1) {
             clearInterval(time);
+            for(i in words) {
+                // words[i].trim()
+                userTypedQuotes.push(words[i].trim());
+            }
             endGame()
         }
     }, 1000);
@@ -70,25 +86,39 @@ function updateTimer() {
 // Finish Game / Do calculations
 function endGame() {
     // Disable textarea
-    typeInput.classList.add('hide')
+    typeInput.classList.add('hide');
     // Perform calculations
-    cWpm.innerHTML = typeInput.value.split("")
-
+    displayMetrics()
+    console.log("Game Over");
 }
 
 
 // Display "pop-up" to show metrics and funny saying
 function displayMetrics() {
+    let words = typeInput.value.split(" ");
+    for(i in words) {
+        // words[i].trim()
+        userTypedQuotes.push(words[i].trim());
+    }
+    let chars = typeInput.value
+    for(i in chars) {
+        // words[i].trim()
+        userTypedChars.push(chars[i].trim());
+    }
+    cWpm.innerHTML = userTypedQuotes.length;
+    cCpm.innerHTML = userTypedQuotes.length;
 
 }
 
 async function createSpan() {
-    let str = await getQuotes()
-    let spans = [...str]
-    console.log(spans)
+    let str = await getQuotes();
+    let spans = [...str];
+    console.log(spans);
     let html = '';
     for(let i = 0; i < spans.length; i++) {
         html += '<span class="quote-char">' + spans[i] + '</span>';
     }
-    quote.innerHTML = html
+    quote.innerHTML = html;
 }
+
+typeInput.addEventListener("click", startGame);

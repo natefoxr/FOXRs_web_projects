@@ -50,6 +50,7 @@ File Rename Tool
 ## Day 
 Speed Typing Test
 Today September 7th-10th, 2022, I added the typing test HTML, CSS and partial Javascript functionality.
+Today September 11th, 2022, I created more javascript functionality to track WPM and CPM when the game ends.
 
 ## Day 
 Password Generator
